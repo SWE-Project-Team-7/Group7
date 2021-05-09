@@ -1,0 +1,28 @@
+﻿<Window x:Name="managePartsWindow" x:Class="PartsTrackerApp.ManageParts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PartsTrackerApp"
+        mc:Ignorable="d"
+        Title="Will's Parts Tracker" Height="450" Width="800" Background="#FF4365D6" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="searchButton">
+        <Label x:Name="titleLabel" Content="Manage Parts" Height="54" Margin="251,39,251,0" VerticalAlignment="Top" FontSize="25" FontWeight="SemiBold" HorizontalContentAlignment="Center" FontFamily="Sylfaen" Foreground="#FFFDF20C" RenderTransformOrigin="0.507,0.295"/>
+        <Label x:Name="partLabel" Content="Keyword or Number :" HorizontalAlignment="Left" Margin="240,92,0,0" VerticalAlignment="Top" Width="155" FontFamily="Sylfaen" FontSize="15" Foreground="#FFFDF20C"/>
+        <TextBox x:Name="keyTextBox" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="400,92,240,0"/>
+        <Button x:Name="searchButton1" Content="Search" Margin="240,127,424,251" Height="41" RenderTransformOrigin="0,0" Click="SearchButton_Click" VerticalContentAlignment="Center"/>
+        <ListBox x:Name="partListBox" Height="81" Margin="240,183,240,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="optionsComboBox" HorizontalAlignment="Left" Height="25" Margin="319,301,0,0" VerticalAlignment="Top" Width="233">
+            <ComboBoxItem Content="View"/>
+            <ComboBoxItem Content="Edit"/>
+            <ComboBoxItem Content="Delete"/>
+        </ComboBox>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Height="51" Margin="240,342,0,0" VerticalAlignment="Top" Width="141" Click="BackButton_Click"/>
+        <Button x:Name="submitButton" Content="Submit" Height="51" Margin="411,342,240,0" VerticalAlignment="Top" Click="SubmitButton_Click"/>
+        <Button x:Name="clearButton" Content="Clear" Margin="424,127,240,251" Click="ClearButton_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="searchPartLabel" Content="Part Number: " HorizontalAlignment="Left" Margin="240,271,0,0" VerticalAlignment="Top" Width="97" FontFamily="Sylfaen" FontSize="15" Foreground="#FFFDF20C"/>
+        <TextBox x:Name="searchPartTextBox" HorizontalAlignment="Left" Height="23" Margin="350,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label x:Name="functionLabel" Content="Function: " HorizontalAlignment="Left" Margin="240,300,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Sylfaen" Foreground="#FFFDF20C"/>
+
+    </Grid>
+</Window>

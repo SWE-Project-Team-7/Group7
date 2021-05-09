@@ -1,0 +1,16 @@
+﻿<Window x:Name="mainWindow" x:Class="PartsTrackerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PartsTrackerApp"
+        mc:Ignorable="d"
+        Title="Will's Parts Tracker" Height="450" Width="800" Background="#FF4365D6" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="titleLabel" Content="Will's Parts Tracker" Height="54" Margin="251,39,251,0" VerticalAlignment="Top" FontSize="25" FontWeight="SemiBold" HorizontalContentAlignment="Center" FontFamily="Sylfaen" Foreground="#FFFDF20C"/>
+        <Button x:Name="addPartsButton" Content="Add Parts" Margin="321,121,321,0" VerticalAlignment="Top" Height="58" Click="AddPartsButton_Click"/>
+        <Button x:Name="managePartsButton" Content="Manage Parts" Margin="321,213,321,0" VerticalAlignment="Top" Height="58" Click="ManagePartsButton_Click"/>
+        <Button x:Name="viewPartsButton" Content="View All Parts" HorizontalAlignment="Left" Margin="321,305,0,0" VerticalAlignment="Top" Width="150" Height="58" Click="ViewPartsButton_Click"/>
+
+    </Grid>
+</Window>
